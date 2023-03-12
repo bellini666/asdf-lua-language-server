@@ -1,5 +1,7 @@
+---
 name: Build
 
+# yamllint disable-line rule:truthy
 on:
   push:
     branches:
@@ -19,4 +21,4 @@ jobs:
       - name: asdf_plugin_test
         uses: asdf-vm/actions/plugin-test@v1
         with:
-          command: <TOOL CHECK>
+          command: lua-language-server --version

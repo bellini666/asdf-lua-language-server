@@ -1,9 +1,8 @@
 <div align="center">
 
-# asdf-<YOUR TOOL> [![Build](https://github.com/<YOUR GITHUB USERNAME>/asdf-<YOUR TOOL>/actions/workflows/build.yml/badge.svg)](https://github.com/<YOUR GITHUB USERNAME>/asdf-<YOUR TOOL>/actions/workflows/build.yml) [![Lint](https://github.com/<YOUR GITHUB USERNAME>/asdf-<YOUR TOOL>/actions/workflows/lint.yml/badge.svg)](https://github.com/<YOUR GITHUB USERNAME>/asdf-<YOUR TOOL>/actions/workflows/lint.yml)
+# asdf-lua-language-server [![Build](https://github.com/bellini666/asdf-lua-language-server/actions/workflows/build.yml/badge.svg)](https://github.com/bellini666/asdf-lua-language-server/actions/workflows/build.yml) [![Lint](https://github.com/bellini666/asdf-lua-language-server/actions/workflows/lint.yml/badge.svg)](https://github.com/bellini666/asdf-lua-language-server/actions/workflows/lint.yml)
 
-
-[<YOUR TOOL>](<TOOL HOMEPAGE>) plugin for the [asdf version manager](https://asdf-vm.com).
+[lua-language-server](https://github.com/LuaLS/lua-language-server) plugin for the [asdf version manager](https://asdf-vm.com).
 
 </div>
 
@@ -16,35 +15,34 @@
 
 # Dependencies
 
-**TODO: adapt this section**
-
 - `bash`, `curl`, `tar`: generic POSIX utilities.
-- `SOME_ENV_VAR`: set this environment variable in your shell config to load the correct version of tool x.
+- `ASDF_LUA_LANGUAGE_SERVER_OVERRIDE_ARCH`: set this environment variable in
+  your shell config to override the default architecture detection.
 
 # Install
 
 Plugin:
 
 ```shell
-asdf plugin add <YOUR TOOL>
+asdf plugin add lua-language-server
 # or
-asdf plugin add <YOUR TOOL> https://github.com/<YOUR GITHUB USERNAME>/asdf-<YOUR TOOL>.git
+asdf plugin add lua-language-server https://github.com/bellini666/asdf-lua-language-server.git
 ```
 
-<YOUR TOOL>:
+lua-language-server:
 
 ```shell
 # Show all installable versions
-asdf list-all <YOUR TOOL>
+asdf list-all lua-language-server
 
 # Install specific version
-asdf install <YOUR TOOL> latest
+asdf install lua-language-server latest
 
 # Set a version globally (on your ~/.tool-versions file)
-asdf global <YOUR TOOL> latest
+asdf global lua-language-server latest
 
-# Now <YOUR TOOL> commands are available
-<TOOL CHECK>
+# Now lua-language-server commands are available
+lua-language-server --version
 ```
 
 Check [asdf](https://github.com/asdf-vm/asdf) readme for more instructions on how to
@@ -52,10 +50,10 @@ install & manage versions.
 
 # Contributing
 
-Contributions of any kind welcome! See the [contributing guide](contributing.md).
+Contributions of any kind welcome! See the [contributing guide](CONTRIBUTING.md).
 
-[Thanks goes to these contributors](https://github.com/<YOUR GITHUB USERNAME>/asdf-<YOUR TOOL>/graphs/contributors)!
+[Thanks goes to these contributors](https://github.com/bellini666/asdf-lua-language-server/graphs/contributors)!
 
 # License
 
-See [LICENSE](LICENSE) © [<YOUR NAME>](https://github.com/<YOUR GITHUB USERNAME>/)
+See [LICENSE](LICENSE) © [Thiago Bellini Ribeiro](https://github.com/bellini666/)
